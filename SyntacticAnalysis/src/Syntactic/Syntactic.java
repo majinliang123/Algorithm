@@ -19,7 +19,7 @@ public class Syntactic {
 	public static void main(String[] args) {
 		Syntactic s = new Syntactic();
 		s.out="";
-		s.scanner();
+		s.phrase();
 	}
 	
 
@@ -91,10 +91,10 @@ public class Syntactic {
 	
 	
 	
-	/**
-	 * 用于遍历字符串
+	/*
+	 * 用于语法分析
 	 */
-	void scanner(){
+	void phrase(){
 		//(- 34 (* 3 42)),要输入的字符串
 		Vector<String> vector = new Vector<String>();
 		String in = TextIn("in.txt");
@@ -202,7 +202,6 @@ public class Syntactic {
 		private String node = null;
 		private Tree leftChild = null;
 		private Tree rightChild = null;
-		private Tree father = null;
 		
 		public Tree(String root){
 			node = root;
