@@ -1,13 +1,14 @@
 /*
- * ��������
- * �㷨˼�룺
- * �ҳ�һ��Ԫ����Ϊ��׼
- * Ȼ���������з�������
- * ʹ��׼���Ԫ�ص�ֵ�������ڻ�׼ֵ
- * ��׼�ұߵ�Ԫ��ֵ ����С�ڻ�׼ֵ
- * �����Ϊ��׼��Ԫ�ص�������������ȷλ��
- * �������ֵ��ȵķ�����
- * �Լ��롣����
+ * 快速排序
+ * 算法思想：
+ * 找出一个元素作为基准
+ * 然后对数组进行分区操作
+ * 使基准左边元素的值都不大于基准值
+ * 基准右边的元素值 都不小于基准值
+ * 如此可以把作为基准的元素调整到排序后的正确位置
+ * 然后对基准左右两边分别使用这种排序操作
+ *
+ * 在平均狀況下，排序n個項目要O(nlogn)（大O符号）次比較。在最壞狀況下則需要O(n^2)次比較，但這種狀況並不常見
  */
 public class Quicksort {
 	void quicksort(int[] v, int left, int right){
@@ -32,7 +33,6 @@ public class Quicksort {
   
 	}
 	public static void main(String[] args) {
-		// TODO �Զ����ɵķ������
 		 int[] x = { 6, 2, 4, 1,0, 5, 9 ,12};
 		 Quicksort q = new Quicksort();
 		 q.quicksort(x, 0, 5);
