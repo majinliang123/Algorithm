@@ -35,7 +35,7 @@ public class Quicksort {
 	public static void main(String[] args) {
 		 int[] x = { 6, 2, 4, 1,0, 5, 9 ,12};
 		 Quicksort q = new Quicksort();
-		 q.quicksort(x, 0, 5);
+		 q.quicksort(x, 0, 7);
 		 for(int i = 0; i < x.length; i++){
 	        	System.out.println(x[i]);
 	      }
